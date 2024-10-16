@@ -1,6 +1,7 @@
 import pytest
 from app.restore_names import restore_names
 
+
 @pytest.mark.parametrize(
     "user, result",
     [
@@ -35,6 +36,4 @@ def test_user_first_name(user: list,
                          result: list
                          ) -> None:
     restore_names(user)
-    assert  user == result
-
-
+    assert user == result
